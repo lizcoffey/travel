@@ -12,9 +12,9 @@
 
 
 <% @images.shuffle.each do |image| %>
-<%= image_tag image %>
+<%= image_tag image, class: "img-responsive" %><br />
 <% end %>
 
 <% @images_hash.each do |key, value| %>
-	<%= image_tag value, alt: key %>
+	<!-- <%= image_tag value, alt: key %> -->
 	<% end %>
